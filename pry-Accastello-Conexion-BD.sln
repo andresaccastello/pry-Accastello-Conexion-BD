@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pry-Accastello-Conexion-BD", "pry-Accastello-Conexion-BD\pry-Accastello-Conexion-BD.csproj", "{3974D2E4-8747-4C4E-9598-363B48F7BFCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3974D2E4-8747-4C4E-9598-363B48F7BFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3974D2E4-8747-4C4E-9598-363B48F7BFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3974D2E4-8747-4C4E-9598-363B48F7BFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3974D2E4-8747-4C4E-9598-363B48F7BFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E57C17C-A0A4-435F-A6C9-A201E7CAAC9A}
+	EndGlobalSection
+EndGlobal
