@@ -20,8 +20,15 @@ namespace pry_Accastello_Conexion_BD
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnVerTodos_Click(object sender, EventArgs e)
+        {
             clsConexionBD objConexion = new clsConexionBD();
             objConexion.ConectarBD();
+            DataTable datos = objConexion.ObtenerDatosTabla("Contactos");
+            dgvGrilla.DataSource = datos;
         }
     }
 }

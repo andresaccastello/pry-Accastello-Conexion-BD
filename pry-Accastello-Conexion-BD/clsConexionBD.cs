@@ -7,6 +7,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 
 using System.Windows.Forms;
+using System.Data;
 
 namespace pryGestionInventario
 {
@@ -41,6 +42,30 @@ namespace pryGestionInventario
                 MessageBox.Show("Tiene un errorcito - " + error.Message);
             }     
 
+        }
+        public DataTable ObtenerDatosTabla(string nombreTabla)
+        {
+            DataTable tabla = new DataTable();
+
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+                {
+                    string consulta = $"SELECT * FROM {"Contactos"}";
+                    using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                    {
+                        conexion.Open();
+                        SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+                        adaptador.Fill(tabla);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener los datos: " + ex.Message);
+            }
+
+            return tabla;
         }
 
     }
